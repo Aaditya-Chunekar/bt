@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "bt"
+version = "0.1.0"
+dependencies = ["yfinance", "pandas"]
+
+[project.scripts]
+bt = "bt.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

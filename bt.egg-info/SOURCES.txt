@@ -1,0 +1,8 @@
+README.md
+setup.py
+bt.egg-info/PKG-INFO
+bt.egg-info/SOURCES.txt
+bt.egg-info/dependency_links.txt
+bt.egg-info/entry_points.txt
+bt.egg-info/requires.txt
+bt.egg-info/top_level.txt
