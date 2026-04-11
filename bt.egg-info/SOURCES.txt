@@ -1,5 +1,10 @@
+.gitignore
 README.md
+__main__.py
+core.py
+pyproject.toml
 setup.py
+test.py
 bt.egg-info/PKG-INFO
 bt.egg-info/SOURCES.txt
 bt.egg-info/dependency_links.txt

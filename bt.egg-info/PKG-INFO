@@ -3,4 +3,3 @@ Name: bt
 Version: 0.1.0
 Requires-Dist: yfinance
 Requires-Dist: pandas
-Dynamic: requires-dist

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=64", "setuptools-scm"]
+requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -10,5 +10,5 @@ dependencies = ["yfinance", "pandas"]
 [project.scripts]
 bt = "bt.__main__:main"
 
-[tool.setuptools.packages.find]
-where = ["."]
+[tool.setuptools.packages]
+find = {}
