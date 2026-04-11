@@ -8,6 +8,17 @@ Minimal SMA crossover backtester. CLI tool + importable library.
 pip install -e .
 ```
 
+## Project layout
+
+```
+bt/
+  __init__.py
+  __main__.py
+  core.py
+pyproject.toml
+README.md
+```
+
 ## Usage
 
 ```sh
@@ -19,6 +30,29 @@ bt ^NSEI -s 10 -l 30 -d 730
 
 # dump output
 bt MSFT --csv trades.csv --json result.json
+```
+
+## CLI help
+
+```sh
+bt --help
+```
+
+```
+usage: bt [-h] [-s N] [-l N] [-d N] [--csv FILE] [--json FILE] ticker
+
+SMA crossover backtester
+
+positional arguments:
+  ticker         ticker symbol, e.g. AAPL or ^NSEI
+
+options:
+  -h, --help     show this help message and exit
+  -s, --short N  short SMA window (default 20)
+  -l, --long N   long SMA window (default 50)
+  -d, --days N   lookback days (default 365)
+  --csv FILE     dump trades to CSV
+  --json FILE    dump full result to JSON
 ```
 
 ## Library
@@ -35,14 +69,17 @@ to_json(r, "result.json")
 ## Output
 
 ```
-AAPL  SMA(20,50)  2024-01-15 → 2025-01-14
+NVDA  SMA(20,50)  2025-06-24 → 2026-04-10
 
-  2024-03-01  BUY            170.42
-  2024-05-12  SELL           182.91   +7.32%
-  ...
+  2025-10-03  BUY             187.60
+  2025-12-02  SELL            181.44  -3.28%
+  2026-01-15  BUY             187.04
+  2026-03-02  SELL            182.47  -2.44%
+  2026-03-06  BUY             177.81
+  2026-03-10  SELL            184.76  +3.91%
 
-  trades          4
-  strategy return +11.20%
-  buy & hold      +23.41%
-  edge            -12.21%
+  trades          3
+  strategy return -1.81%
+  buy & hold      +27.56%
+  edge            -29.37%
 ```
