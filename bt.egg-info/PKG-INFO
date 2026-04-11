@@ -1,5 +1,0 @@
-Metadata-Version: 2.4
-Name: bt
-Version: 0.1.0
-Requires-Dist: yfinance
-Requires-Dist: pandas

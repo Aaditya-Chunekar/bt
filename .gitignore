@@ -1,1 +1,4 @@
-bt.egg_info/
+bt/__pycache__
+build
+*json
+*csv

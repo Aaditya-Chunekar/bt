@@ -10,5 +10,5 @@ dependencies = ["yfinance", "pandas"]
 [project.scripts]
 bt = "bt.__main__:main"
 
-[tool.setuptools.packages]
-find = {}
+[tool.setuptools.packages.find]
+include = ["bt*"]

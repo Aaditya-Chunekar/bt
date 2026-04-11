@@ -1,2 +1,0 @@
-[console_scripts]
-bt = bt.__main__:main
