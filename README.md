@@ -5,6 +5,7 @@ Minimal SMA crossover backtester. CLI tool + importable library.
 ## Install
 
 ```sh
+git clone https://github.com/Aaditya-Chunekar/bt
 pip install -e .
 ```
 
